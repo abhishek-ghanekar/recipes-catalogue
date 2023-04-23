@@ -8,7 +8,7 @@ function CategoriesScreen({navigation}) {
           // to pass the data to the screen we want to navigate we have the navigate function accepts another parameter
            navigation.navigate('MealsOverView',{
             categoryId : itemData.item.id,
-           });
+           }); 
         }
         return <CategoryGridTile title={itemData.item.title} color={itemData.item.color} onPress={pressHandler}/>;
     }
